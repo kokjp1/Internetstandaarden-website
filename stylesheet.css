@@ -101,20 +101,20 @@ section figcaption {
 }
 
 footer {
-    display:flex;
-    justify-content: space-between;
     margin-top:10em;
     background-color: #1C1D24;
-    padding: 0em 0em 5em 0em; 
+    padding: 0em 3em 5em 0em; 
 }
 
-footer h3 {
-    display:flex;
-    align-content: center;
+footer ul {
+    list-style-type: none;
     margin-top: 5em;
-    margin-left: 2em;
-    margin-right: 2em;
-    color:#BD93F9
+    display:flex;
+    justify-content:space-between;
+    gap:4em;
+    font-size:1.25em;
+    color:#BD93F9;
+    padding-top:3em;
 }
 
 * {
@@ -186,4 +186,20 @@ audio {
     border-color: #6272A4;
     box-shadow: 0 0em 1.3em 0 rgba(0, 0, 0, 0.7);
     scroll-margin-top:6.5em;
+}
+
+/* iframe stukje beetje onduidelijk misschien, de iframe class is zodat de enkele liedjes opmaak kunnen hebben zonder dat de minecraft playlist beinvloed word door de css
+    want ik kreeg het niet voor elkaar om alleen de opmaak van de minecraft playlist aan te passen dus dan maar andersom, de rest aanpassen en de playlist default laten */
+
+.iframe { 
+    display:inline-block;
+    border-radius:12px;
+    width:49.5%;
+    height:152px;
+    border:0;
+    margin: 1em 0em 0em 0em;
+}
+
+iframe {
+    padding-top:1em
 }
