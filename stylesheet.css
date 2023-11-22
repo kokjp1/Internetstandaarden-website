@@ -25,14 +25,15 @@ header {
     background-color:#282A36
 }
 
-header h2 {
+header p {
     float: left;
+    font-size: 1.5em;
     color:#BD93F9;
     padding-left:1em;
     transition:0.35s;
 }
 
-header h2:hover {
+header p:hover {
     font-size:1.7em;
 }
 .sources{
@@ -203,4 +204,30 @@ iframe {
     padding-top:1em;
     border:0;
     width:100%;
+}
+
+.backtotop {
+    position: sticky;  
+    top:0;
+    right:2.5em;
+    bottom:3em;
+    left:0;
+    width:4%;
+    margin:2em;
+    float:right
+}
+
+span {
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    border-bottom:#FF79C6;
+    border-style:solid
+}
+
+title {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
 }
