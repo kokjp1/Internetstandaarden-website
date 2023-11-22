@@ -8,6 +8,12 @@
     src: url(Fonts/FreeSans.ttf);
 }
 
+@media (prefers-reduced-motion) {
+    nav a {
+        transition:none
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -203,6 +209,12 @@ section ul p {
 
 section a {
     color: #BD93F9; 
+}
+
+section a:hover {
+    color:#FF79C6;
+    transition: ease-in;
+    transition-duration: 0.15s;
 }
 
 audio {
