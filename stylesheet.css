@@ -8,12 +8,6 @@
     src: url(Fonts/FreeSans.ttf);
 }
 
-@media (prefers-reduced-motion) {
-    nav a {
-        transition:none
-    }
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -26,8 +20,8 @@ body{
 }
 
 header {
-    position:sticky;
     top:0em;
+    position:sticky;
     background-color:#282A36
 }
 
@@ -42,6 +36,7 @@ header p {
 header p:hover {
     font-size:1.7em;
 }
+
 .sources{
     float: right;
     color:#BD93F9;
@@ -80,7 +75,7 @@ nav a {
 /* beetje een gezeik met de bronnenlijst classes, de "section ul p" bleef maar de ".bronnenlijst p" overriden dus heb het maar zo opgelost, het werkt wel allemaal */
 
 .bronnenlijst {
-    list-style-type: none;
+    list-style-type: none;  
     padding:0
 }
 
@@ -92,6 +87,7 @@ nav a {
 
 .bronnenlijst p {
     font-size:0.75em;
+    transition:0.1s;
     display:flex;
     justify-content: flex-start;
     margin-top:0;
@@ -101,6 +97,10 @@ nav a {
     color:white;
     border-style:none;
     box-shadow:none;
+}
+
+.bronnenlijst p:hover {
+    font-size:0.8em;   
 }
 
 .bronnenlijst a {
@@ -218,10 +218,11 @@ section a:hover {
 }
 
 audio {
-    font-size: 1.5em;
     display:flex;
     justify-content: center;
-    padding: 2% 9.25em 2% 9.25em;
+    width:97%;
+    padding:0.5em;
+    font-size: 1.5em;
     border-radius: 1.3em;
     color:white;
     background-color:#282A36;
@@ -256,7 +257,12 @@ iframe {
     left:0;
     width:4%;
     margin:2em;
-    float:right
+    float:right;
+    transition: ease-in-out 0.3s;
+}
+
+.backtotop:hover {
+    width:5.5em;
 }
 
 span {
@@ -264,12 +270,30 @@ span {
     border-right:0;
     border-left:0;
     border-bottom:#FF79C6;
-    border-style:solid
+    border-style:solid;
 }
 
 title {
     width: 120px;
     background-color: black;
-    color: #fff;
+    color: #fff;    
     text-align: center;
+}
+
+/* als schermbreedte <53.5em is, unstick header */
+
+@media (max-width:53.5em){
+    header {
+        position: unset;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    nav a {
+        transition:none
+    }
+    /* gifje verstoppen als je reduced motion hebt, figcap wel zichtbaar */
+    figure img {
+        display:none
+    }
 }
