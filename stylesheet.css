@@ -292,8 +292,9 @@ title {
     nav a {
         transition:none
     }
-    /* gifje verstoppen als je reduced motion hebt, figcap wel zichtbaar */
     figure img {
         display:none
     }
 }
+
+/* gifje verstoppen als je reduced motion hebt, figcap wel zichtbaar */
