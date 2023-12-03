@@ -283,7 +283,7 @@ title {
 
 /* als schermbreedte <53.5em is, unstick header */
 
-@media (max-width:53.5em){
+@media screen and (max-width:53.5em){
     header {
         position: unset;
     }
@@ -293,9 +293,18 @@ title {
     nav a {
         transition:none
     }
-    figure img {
+    figure img /*het gifje*/{
         display:none
     }
 }
 
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: #c7c7c7;
+    }
+
+    header {
+        background-color: #c7c7c7;
+    }
+}
 /* gifje verstoppen als je reduced motion hebt, figcap wel zichtbaar */
