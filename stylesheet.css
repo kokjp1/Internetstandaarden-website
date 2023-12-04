@@ -1,11 +1,11 @@
 @font-face {
     font-family: HelveticaWorld;
-    src: url(Fonts/FreeSansBold.ttf);
+    src: url(fonts/FreeSansBold.ttf);
 }
 
 @font-face {
     font-family: HelveticaWorldReg;
-    src: url(Fonts/FreeSans.ttf);
+    src: url(fonts/FreeSans.ttf);
 }
 
 html {
